@@ -9,3 +9,6 @@ build
 dist
 
 .idea/*
+
+# Firebase Config
+src/js/firebase.config.js
