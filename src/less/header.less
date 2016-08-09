@@ -1,0 +1,63 @@
+@import "flexbox.less";
+
+.header {
+  .flex-display;
+  .flex-align-center;
+  .flex-direction-col;
+  padding: 15px 0 10px 0;
+  strong {
+    color: #AAA;
+  }
+}
+
+.site-logo {
+  color: @logo-color;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  width: 100%;
+  .flex-display;
+  .justify-center;
+  .flex-direction-row;
+  margin-top: 5px;
+  .links {
+    text-transform: uppercase;
+    .flex-display;
+    .justify-space-between;
+    max-width: 300px;
+    width: 90%;
+  }
+  a:hover, .site-nav a:focus, .site-nav a:active { color: #fff; }
+}
+
+.site-promo {
+  text-align: center;
+  width: 100%;
+  color: @text-color-site-promo;
+  padding: 15px;
+  h1 {
+    margin: 10px 15px 0 15px;
+  }
+  .description {
+    font-size: 1.25em;
+    margin: 20px 15px;
+  }
+
+  .banner {
+    background-color: #444;
+    padding: 10px 0 10px 25px;
+    .flex-display;
+    .justify-center;
+    .sharing {
+      .flex-display;
+      max-width: 320px;
+      width: auto;
+    }
+  }
+
+}
